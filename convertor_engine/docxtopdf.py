@@ -1,25 +1,3 @@
-# import os
-# import subprocess
-
-# def fun(input_path, output_folder):
-#     os.makedirs(output_folder, exist_ok=True)
-
-#     subprocess.run(
-#         [
-#             'libreoffice',
-#             '--headless',
-#             '--convert-to',
-#             'pdf',
-#             input_path,
-#             '--outdir',
-#             output_folder
-#         ],
-#         check=True
-#     )
-
-
-# fun("./files/Movie_Data_Analysis_Project.docx", "generated_pdfs")
-
 import os
 import subprocess
 
@@ -57,4 +35,7 @@ def fun(input_path, output_folder):
         original_output = os.path.join(output_folder, f"{base_name}.pdf")
         os.rename(original_output, full_output_path)
 
-fun("./files/Movie_Data_Analysis_Project.docx", "generated_pdfs")
+# fun("./files/Movie_Data_Analysis_Project.docx", "./generated_pdfs")
+
+def printer():
+    print("Hi from docxtopdf.py")
